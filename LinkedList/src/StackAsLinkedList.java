@@ -29,7 +29,7 @@ public class StackAsLinkedList {
             top = newNode;
             newNode.next = temp;
         }
-      System.out.println(data + " pushed to stack");
+   //   System.out.println(data + " pushed to stack");
     }
  
     public int pop()
@@ -55,7 +55,7 @@ public class StackAsLinkedList {
             return top.data;
         }
     }
-    public static void main(String[] args)
+/*public static void main(String[] args)
     {
  
         StackAsLinkedList sll = new StackAsLinkedList();
@@ -67,5 +67,5 @@ public class StackAsLinkedList {
         System.out.println(sll.pop() + " popped from stack");
  
         System.out.println("Top element is " + sll.peek());
-    }
+    }*/
 }
