@@ -70,6 +70,9 @@ public class List {
 							 sll.push(a[i]);
 							 p =p + s[i]+"  ";
 							   lblPush.setText(p+"pushed to stack");
+							   lblPush.setText(p+"pushed to stack");
+							   lblPush.setText(p+"pushed to stack");
+							   lblPush.setText(p+"pushed to stack");
 			        }
 			}
 				 
