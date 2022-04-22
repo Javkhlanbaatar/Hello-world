@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class GradeManagerUnitTest {
 
+	@SuppressWarnings("static-access")
 	@Test
 	public void gradeManagerTest() {
 		GradeManager gm = new GradeManager();
@@ -13,6 +14,7 @@ public class GradeManagerUnitTest {
 			Assert.assertTrue(gm.allGrades.containsKey(gl));
 	}
 
+	@SuppressWarnings("static-access")
 	@Test
 	public void addGRadeTest() {
 		GradeManager gm = new GradeManager();
