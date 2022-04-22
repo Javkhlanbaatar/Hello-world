@@ -3,6 +3,7 @@ import java.util.HashMap;
 import org.junit.Assert;
 import org.junit.Test;
 
+@SuppressWarnings("unused")
 public class GradeManagerUnitTest {
 
 	@SuppressWarnings("static-access")
