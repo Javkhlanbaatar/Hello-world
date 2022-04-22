@@ -42,7 +42,6 @@ public class GradeManager {
 			allGrades.put(a, oldGrade + i);
 		} else if (grade.equals("b")) {
 			LetterGrade b = LetterGrade.B;
-			@SuppressWarnings("unused")
 			int oldGrade = allGrades.get(b);
 			allGrades.put(b, i);
 		} else if (grade.equals("c")) {
@@ -71,7 +70,6 @@ public class GradeManager {
 
 		} else if (grade >= 2.7 && grade < 3.5) {
 			LetterGrade b = LetterGrade.B;
-			@SuppressWarnings("unused")
 			int oldGrade = allGrades.get(b);
 			allGrades.put(b, i);
 		} else if (grade < 2.7 && grade > 1.7) {
@@ -130,7 +128,6 @@ public class GradeManager {
 	 */
 
 	public static void main(String[] args) throws Exception {
-		@SuppressWarnings("unused")
 		GradeManager gm = new GradeManager();
 
 		BufferedReader cin = new BufferedReader(new InputStreamReader(System.in));
@@ -140,7 +137,6 @@ public class GradeManager {
 		while (true) {
 			String input = null;
 			String[] grd = null;
-			@SuppressWarnings("unused")
 			int dun;
 			System.out.println("\t Insert a input");
 			try {
