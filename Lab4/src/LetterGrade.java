@@ -9,10 +9,5 @@ public enum LetterGrade {
 	B,
 	C,
 	D,
-	F,;
-
-	LetterGrade[] values() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	F,
 }
