@@ -9,6 +9,7 @@ import java.util.HashMap;
  * 
  */
 
+@SuppressWarnings("unused")
 public class GradeManager {
 
 	// Keeps track of the number of each grade this has
