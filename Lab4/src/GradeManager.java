@@ -56,7 +56,7 @@ public class GradeManager {
 			LetterGrade f = LetterGrade.F;
 			int oldGrade = allGrades.get(f);
 			allGrades.put(f, oldGrade + i);
-		} else // add/fdfd
+		} else 
 
 			throw new InvalidGradeException("Grade is not acceptable ");
 	}
@@ -66,7 +66,7 @@ public class GradeManager {
 		if (grade <= 4 && grade >= 3.5) {
 			LetterGrade a = LetterGrade.A;
 			int oldGrade = allGrades.get(a);
-			allGrades.put(a, oldGrade + i); // umnux utga deer n 1 eer nemegduulne ZASAX
+			allGrades.put(a, oldGrade + i); 
 
 		} else if (grade >= 2.7 && grade < 3.5) {
 			LetterGrade b = LetterGrade.B;
@@ -152,7 +152,7 @@ public class GradeManager {
 
 				} else if (input.startsWith("point")) {
 
-					addP(Float.parseFloat(grd[1])); // point/3.3
+					addP(Float.parseFloat(grd[1])); 
 
 				} else if (input.equals("print")) {
 					printHistogram();
@@ -161,10 +161,10 @@ public class GradeManager {
 
 					break;
 				}
-			} catch (NumberFormatException e) { // point/hfghhgf
+			} catch (NumberFormatException e) { 
 
 				throw new NumberFormatException(e + "  has an invalid format!");
-			} catch (ArrayIndexOutOfBoundsException e) { // add////
+			} catch (ArrayIndexOutOfBoundsException e) { 
 
 				throw new ArrayIndexOutOfBoundsException(e + " index is out of bounds !!!");
 			} catch (Exception e) {

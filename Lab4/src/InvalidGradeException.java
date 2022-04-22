@@ -3,6 +3,7 @@
  * Exception that should be thrown if an invalid grade is passed in.
  *
  */
+@SuppressWarnings("serial")
 public class InvalidGradeException extends Exception {
 	
 	  public InvalidGradeException() {
