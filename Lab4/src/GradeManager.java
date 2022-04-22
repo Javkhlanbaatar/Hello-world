@@ -61,7 +61,7 @@ public class GradeManager {
 			throw new InvalidGradeException("Grade is not acceptable ");
 	}
 
-	public static void addP(float grade) throws InvalidGradeException {
+/*	public static void addP(float grade) throws InvalidGradeException {
 		int i = 1;
 		if (grade <= 4 && grade >= 3.5) {
 			LetterGrade a = LetterGrade.A;
@@ -86,7 +86,7 @@ public class GradeManager {
 			allGrades.put(f, oldGrade + i);
 		} else
 			throw new InvalidGradeException(grade);
-	}
+	}*/
 
 	/**
 	 * Prints out a histogram of the grades to the console.
@@ -132,7 +132,6 @@ public class GradeManager {
 
 		BufferedReader cin = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Starting the grade manager");
-		System.out.println("\t Input format is   command/grade ");
 
 		while (true) {
 			String input = null;
@@ -142,16 +141,16 @@ public class GradeManager {
 			try {
 
 				input = cin.readLine();
-				grd = input.split("/");
+				grd = input.split(" ");
 
 				if (input.startsWith("add")) {
 					addGrade(grd[1]);
 
-				} else if (input.startsWith("point")) {
+				}/* else if (input.startsWith("point")) {
 
 					addP(Float.parseFloat(grd[1])); 
 
-				} else if (input.equals("print")) {
+				}*/ else if (input.equals("print")) {
 					printHistogram();
 
 				} else if (input.equals("exit")) {
