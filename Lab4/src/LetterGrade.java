@@ -1,4 +1,4 @@
-package grades;
+
 
 /**
  * Represents allowable letter grades.
@@ -9,5 +9,10 @@ public enum LetterGrade {
 	B,
 	C,
 	D,
-	F,
+	F,;
+
+	LetterGrade[] values() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
