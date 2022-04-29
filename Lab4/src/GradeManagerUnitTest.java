@@ -21,7 +21,7 @@ public class GradeManagerUnitTest {
 		GradeManager gm = new GradeManager();
 
 		try {
-			for (int i = 4; i >= 0; i--)
+			for (int i = 100; i >= 0; i--)
 				gm.addP(i);
 			
 			String str= "{B=1, D=1, A=1, C=1, F=1}";

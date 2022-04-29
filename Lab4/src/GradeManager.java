@@ -61,32 +61,32 @@ public class GradeManager {
 			throw new InvalidGradeException("Grade is not acceptable ");
 	}
 
-/*	public static void addP(float grade) throws InvalidGradeException {
+	public static void addP(float grade) throws InvalidGradeException {
 		int i = 1;
-		if (grade <= 4 && grade >= 3.5) {
+		if (grade <= 100 && grade >= 90) {
 			LetterGrade a = LetterGrade.A;
 			int oldGrade = allGrades.get(a);
 			allGrades.put(a, oldGrade + i); 
 
-		} else if (grade >= 2.7 && grade < 3.5) {
+		} else if (grade >= 90 && grade < 80) {
 			LetterGrade b = LetterGrade.B;
 			int oldGrade = allGrades.get(b);
 			allGrades.put(b, i);
-		} else if (grade < 2.7 && grade > 1.7) {
+		} else if (grade <= 80 && grade > 70) {
 			LetterGrade c = LetterGrade.C;
 			int oldGrade = allGrades.get(c);
 			allGrades.put(c, oldGrade + i);
-		} else if (grade < 1.8 && grade > 0.7) {
+		} else if (grade <= 70 && grade > 60) {
 			LetterGrade d = LetterGrade.D;
 			int oldGrade = allGrades.get(d);
 			allGrades.put(d, oldGrade + i);
-		} else if (grade < 0.8 && grade >= 0) {
+		} else if (grade <= 60 && grade >= 0) {
 			LetterGrade f = LetterGrade.F;
 			int oldGrade = allGrades.get(f);
 			allGrades.put(f, oldGrade + i);
 		} else
 			throw new InvalidGradeException(grade);
-	}*/
+	}
 
 	/**
 	 * Prints out a histogram of the grades to the console.
@@ -110,7 +110,7 @@ public class GradeManager {
 		for (LetterGrade gl : LetterGrade.values()) {
 			sb.append(gl + ":");
 			for (int i = 0; i < allGrades.get(gl); i++) {
-				sb.append("*");
+				sb.append("+");
 			}
 			sb.append("\n");
 		}
@@ -146,11 +146,11 @@ public class GradeManager {
 				if (input.startsWith("add")) {
 					addGrade(grd[1]);
 
-				}/* else if (input.startsWith("point")) {
+				} else if (input.startsWith("point")) {
 
 					addP(Float.parseFloat(grd[1])); 
 
-				}*/ else if (input.equals("print")) {
+				} else if (input.equals("print")) {
 					printHistogram();
 
 				} else if (input.equals("exit")) {
